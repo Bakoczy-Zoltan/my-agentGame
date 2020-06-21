@@ -20,6 +20,8 @@ public class CodeCardsMixer implements GameToolsMaker<String> {
         String[] gameCodeCards = new String[25];
         List<String> tempCards = allCards;
 
+        //Test commit
+
         Collections.shuffle(tempCards);
         for (int i = 0; i < gameCodeCards.length ; i++) {
             gameCodeCards[i] = tempCards.get(i);
