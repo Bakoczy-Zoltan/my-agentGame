@@ -24,7 +24,7 @@ class GameApplicationTests {
         gameCardMixer.mixCard();
         String[] mixedCard = gameCardMixer.getActualCodeCards();
 
-        Assertions.assertEquals(mixedCard.length, 25);
+        Assertions.assertEquals(25, mixedCard.length);
     }
 
     @Test
@@ -55,6 +55,7 @@ class GameApplicationTests {
         agentCardMixer = new AgentCardsMixer(AgentCardType.RED);
         AgentCardType[] firstMix = agentCardMixer.mixCard();
         AgentCardType[] secondMix = agentCardMixer.mixCard();
+
         int actualIndex = 0;
         boolean hasDifferentCards = false;
 
